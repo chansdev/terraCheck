@@ -61,4 +61,17 @@ export default function postar() {
         
     
     });
+
+       btEnviar.addEventListener("touchend", function(e) {
+    
+        e.preventDefault();
+        const areaPostar = document.querySelector("#areaPostar");
+        const btPostar = document.querySelector("#btPostar");
+
+        new Postagem();
+        areaPostar.classList.remove("ativo");
+        btPostar.classList.remove("ativo");
+        
+    
+    });
 }
