@@ -128,6 +128,11 @@
       </div>
     </div>
 
+    <div class="publicacoes enviadas">
+      <h2 class="titulo">Aqui estão as suas postagens</h2>
+
+    </div>
+
     <button id="btPostar">
     <img src="./imgs/icons/postar-icon.png" alt="">
     </button>
@@ -141,13 +146,23 @@
       <label class="texto" for="fotoTerrario">Foto</label>
       <input type="file" name="fotoTerrario" id="fotoTerrario" accept="image/*">
 
+
+      <label for="escolhaTerr">Escolha o tipo de terrario</label>
+      <select name="escolhaTerr" id="escolhaTerr">
+      <option value="">...</option>
+      <option value="aquatico">Aquático</option>
+      <option value="desertico">Desertico</option>
+      <option value="tropical">Tropical</option>
+      <option value="miniJardim">Mini Jardim</option>
+    </select>
+
       <label class="texto" for="nomeUsuario">Nome</label>
       <input type="text" placeholder="Insira seu nome" name="nomeUsuario" id="nomeUsuario">
 
       <label class="texto" for="fotoTerrario">Descricao</label>
       <textarea name="descricaoTerrario" id="descricaoTerrario" rows="5" placeholder="Insira a descrição com no máximo 400 caractéres" maxlength="400"></textarea>
       
-      <button type="submit" class="texto">Enviar</button>
+      <button type="submit" class="texto" id="btEnviar">Enviar</button>
     </form>
   </section>
 
