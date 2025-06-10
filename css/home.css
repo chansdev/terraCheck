@@ -1,0 +1,91 @@
+.home-bg {
+  background-image: linear-gradient(to top, #5f6661, #3f4941);
+
+  #introducao {
+    padding: 20px;
+    padding-bottom: 40px;
+
+    .titulo {
+      font-size: 60px;
+      font-weight: lighter;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .texto {
+      font-size: 30px;
+      padding: 0px 15px;
+      text-align: justify;
+    }
+  }
+
+  #equipe {
+    .titulo {
+      font-size: 50px;
+      font-weight: lighter;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    .desenvolvedores {
+      display: grid;
+      gap: 20px;
+      padding-bottom: 40px;
+
+      .desenvolvedor {
+        display: flex;
+        gap: 20px;
+        color: white;
+        align-items: center;
+        padding: 5px;
+
+        .img {
+          position: relative;
+          bottom: 15px;
+          display: flex;
+          width: 110px;
+          height: 110px;
+          border-radius: 15px;
+
+          img {
+            height: 125px;
+            object-fit: cover;
+          }
+        }
+
+        .nome {
+          font-family: "Pompiere";
+          font-size: 30px;
+        }
+
+        .funcao {
+          font-family: "josefin Sans";
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+
+      .desenvolvedor.esquerda {
+        width: 80%;
+        justify-self: start;
+        padding-left: 10%;
+        background-image: linear-gradient(90deg, #1f2420, #263929);
+        border-radius: 0px 15px 15px 0px;
+        padding-right: 10px;
+      }
+
+      .desenvolvedor.direita {
+        width: 80%;
+        justify-self: end;
+        justify-content: end;
+        padding-right: 10%;
+        background-image: linear-gradient(90deg, #263929, #1f2420);
+        border-radius: 15px 0px 0px 15px;
+        text-align: end;
+        padding-left: 10px;
+      }
+    }
+  }
+}

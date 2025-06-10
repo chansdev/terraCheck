@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terrários | TerraCheck</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Pompiere&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header id="header">
+    <div id="menuHamburguer">
+      <button id="btMenu"></button>
+      <div class="menuTraco"></div>
+      <div class="menuTraco"></div>
+      <div class="menuTraco"></div>
+    </div>
+
+    <a id="btHome" href="./index.html"><img src="./imgs/icons/terracheck-logo.png" alt="Ícone da TerraCheck"></a>
+
+    <div id="navMobile">
+      <nav>
+        <ul>
+          <li><a href="./index.html"><img class="menuIcon" src="./imgs/icons/home-icon.png" alt="">Home</a></li>
+          <li><a href="./terrarios.html"><img class="menuIcon" src="./imgs/icons/terrarios-icon.png" alt="">Terrários</a></li>
+          <li><a href="./comoFazer.html"><img class="menuIcon" src="./imgs/icons/como-fazer-icon.png" alt="">Como Fazer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="terrarios">
+    <div class="banner">
+      <img src="./imgs/terrarios-banner.jpeg" alt="banner da área terrarios">
+      <div></div>
+      <h1 class="titulo">Terrários</h1>
+    </div>
+
+    <select name="selectTerrario" id="selectTerrario" class="texto">
+      <option value="todos">Todos</option>
+      <option value="aquatico">Aquático</option>
+      <option value="desertico">Desértico</option>
+      <option value="tropical">Tropical</option>
+      <option value="miniJardim">Mini Jardim</option>
+    </select>
+
+    <div class="publicacoes">
+      <div class="publicacao">
+        <div class="img">
+          <img src="./imgs/publicacao1.png" alt="">
+        </div>
+        <h2 class="perfil titulo">
+          <div class="perfil-ft"></div> MasterClaudio777
+        </h2>
+        <p class="descricao texto">Acabei meu terrário e ficou simplesmente insano 😎🔥
+          Tudo escolhido no detalhe pra ficar com a minha cara — natureza e atitude num só lugar.
+          Curti demais montar isso, já quero fazer outro!</p>
+        <div class="interacoes">
+
+        </div>
+      </div>
+
+      <div class="publicacao aquatico">
+        <div class="img">
+          <img src="./imgs/publicacao1.png" alt="">
+        </div>
+        <h2 class="perfil titulo">
+          <div class="perfil-ft"></div> ClaudioDoRodo
+        </h2>
+        <p class="descricao texto">Terrario tryhard! Eu sinceramente odeio mexer com terra mas fazer esse terrário mexeu com as minhas capacidades artistas. Aceito críticas!</p>
+        <div class="interacoes">
+
+        </div>
+      </div>
+
+      <div class="publicacao desertico">
+        <div class="img">
+          <img src="./imgs/publicacao1.png" alt="">
+        </div>
+        <h2 class="perfil titulo">
+          <div class="perfil-ft"></div> Ana Terrarias
+        </h2>
+        <p class="descricao texto">Gente hoje foi o dia de fazer terrario aqui em casa. Foi muito bom eu gostei demais, me aproximou muito com a minha mãe! #oruamLivre #virginia</p>
+        <div class="interacoes">
+
+        </div>
+      </div>
+
+      <div class="publicacao tropical">
+        <div class="img">
+          <img src="./imgs/publicacao1.png" alt="">
+        </div>
+        <h2 class="perfil titulo">
+          <div class="perfil-ft"></div> Renato Jorlam
+        </h2>
+        <p class="descricao texto">Meus amigos bodybuilders me zoaram muito por fazer esse negocio, falaram que nao é coisa de macho. Mas eu digo que é sim! Macho de verdade cuida da sua saúde mental e fisica igualmente! Adorei essa p#@¡$! #growth</p>
+        <div class="interacoes">
+
+        </div>
+      </div>
+
+      <div class="publicacao miniJardim">
+        <div class="img">
+          <img src="./imgs/publicacao1.png" alt="">
+        </div>
+        <h2 class="perfil titulo">
+          <div class="perfil-ft"></div> Dalva Earths
+        </h2>
+        <p class="descricao texto">Tentei fazer o tipo aquático e acho que ficou legal ein! Dizem que é o mais difícil de se fazer e eu entendi o porque, mas foi legal.</p>
+        <div class="interacoes">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="publicacoes enviadas">
+      <h2 class="titulo">Aqui estão as suas postagens</h2>
+
+    </div>
+
+    <button id="btPostar">
+      <img src="./imgs/icons/postar-icon.png" alt="">
+    </button>
+  </main>
+
+  <section id="areaPostar">
+
+    <form id="form">
+      <h2 class="titulo">POSTAR</h2>
+
+      <label class="texto" for="fotoTerrario">Foto</label>
+      <input type="file" name="fotoTerrario" id="fotoTerrario" accept="image/*">
+
+
+      <label for="escolhaTerr">Escolha o tipo de terrario</label>
+      <select name="escolhaTerr" id="escolhaTerr">
+        <option value="">...</option>
+        <option value="aquatico">Aquático</option>
+        <option value="desertico">Desertico</option>
+        <option value="tropical">Tropical</option>
+        <option value="miniJardim">Mini Jardim</option>
+      </select>
+
+      <label class="texto" for="nomeUsuario">Nome</label>
+      <input type="text" placeholder="Insira seu nome" name="nomeUsuario" id="nomeUsuario">
+
+      <label class="texto" for="fotoTerrario">Descricao</label>
+      <textarea name="descricaoTerrario" id="descricaoTerrario" rows="5" placeholder="Insira a descrição com no máximo 400 caractéres" maxlength="400"></textarea>
+
+      <button type="submit" class="texto" id="btEnviar">Enviar</button>
+    </form>
+  </section>
+
+  <footer id="footer">
+    <div class="img">
+      <img src="./imgs/icons/terracheck-logo.png" alt="">
+    </div>
+    <div id="footerNav">
+      <h2>Áreas</h2>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./terrarios.html">Terrarios</a></li>
+          <li><a href="./comoFazer.html">Como Fazer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script type="module" src="./script.js"></script>
+</body>
+
+</html>

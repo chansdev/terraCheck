@@ -1,0 +1,90 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #263929;
+  font-family: "Josefin Sans";
+
+  #btHome {
+    width: 133px;
+  }
+
+  #menuHamburguer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 7px;
+    width: 30px;
+    height: fit-content;
+    position: relative;
+    rotate: 0deg;
+    transition: 0.3s;
+
+    #btMenu {
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      opacity: 0;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
+
+    .menuTraco {
+      width: 30px;
+      height: 2px;
+      border-radius: 3px;
+      background-color: white;
+    }
+  }
+
+  #menuHamburguer.ativo {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    rotate: 180deg;
+
+    .menuTraco {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    #btMenu {
+      top: -15px;
+      grid-column: 1;
+      grid-row: 1;
+    }
+  }
+
+  #navMobile {
+    position: absolute;
+    top: 50px;
+    display: none;
+    width: 100%;
+    height: calc(100vh - 50px);
+    justify-items: center;
+    align-content: center;
+    color: white;
+    background-color: #263929;
+    font-size: 36px;
+    z-index: 99;
+    transition: 0.3s;
+
+    img {
+      height: 36px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      a {
+        align-items: center;
+      }
+    }
+  }
+
+  #navMobile.ativo {
+    display: block;
+  }
+}
