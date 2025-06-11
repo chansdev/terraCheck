@@ -14,6 +14,10 @@
     border-radius: 10px;
     padding: 5px 10px;
     background-color: #263929;
+    background-image: url("../imgs/icons/seta-icon.png");
+    background-size: 20px;
+    background-position: 95% center;
+    background-repeat: no-repeat;
     color: white;
     border: none;
     appearance: none;
@@ -41,6 +45,14 @@
     option[value="miniJardim"] {
       background-color: #684c30;
     }
+  }
+
+  #selectTerrario.ativo {
+    background-image: url("../imgs/icons/seta-icon-cima.png");
+  }
+
+  #selectTerrario:focus {
+    outline: none;
   }
 
   .publicacoes {

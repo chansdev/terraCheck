@@ -6,6 +6,10 @@ export default function selectTerrario() {
     verificarPostagens();
   });
 
+  selecao.addEventListener("click", () => {
+    selecao.classList.toggle("ativo");
+  });
+
   function verificarPostagens() {
     switch (selecao.value) {
       case "todos":
