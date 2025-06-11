@@ -33,7 +33,7 @@
       .texto {
         font-size: 30px;
         margin-bottom: 20px;
-        text-align: justify;
+        text-align: start;
       }
 
       .tipos {
@@ -104,6 +104,58 @@
       .titulo {
         margin-bottom: 20px;
       }
+    }
+  }
+
+  .especificidades {
+    display: grid;
+    gap: 40px;
+
+    h2.titulo {
+      font-size: 60px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .especificidade {
+      display: flex;
+      gap: 10px;
+      padding: 80px 15px;
+      background-size: 100% 100%;
+      align-items: center;
+
+      img {
+        width: 180px;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+      }
+
+      .titulo {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      .texto {
+        text-align: start;
+      }
+    }
+
+    .especificidade.aquatico {
+      background-image: url("../imgs/aquatico-bg.png");
+    }
+
+    .especificidade.desertico {
+      background-image: url("../imgs/desertico-bg.png");
+    }
+
+    .especificidade.tropical {
+      background-image: url("../imgs/tropical-bg.png");
+    }
+
+    .especificidade.miniJardim {
+      background-image: url("../imgs/mini-jardim-bg.png");
     }
   }
 }

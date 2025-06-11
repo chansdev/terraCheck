@@ -15,7 +15,7 @@
     .texto {
       font-size: 30px;
       padding: 0px 15px;
-      text-align: justify;
+      text-align: start;
     }
   }
 
